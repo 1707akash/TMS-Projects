@@ -1,0 +1,148 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --deepBlue : #00569b;
+    --magenta:#f0aae2;
+    --textColor: #525151;
+    --buttonClr: #f00252;
+}
+
+body{
+     background-color: #f8f8f8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header{
+    position: fixed;
+    width: 100%;
+}
+
+.navbar{
+    background-color: var(--deepBlue);
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.logo-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.punchLine{
+    margin-left: 8rem;
+}
+
+.logoImg{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.navlinks{
+    display: flex;
+}
+
+.lists{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 0.3rem;
+    margin: 0.5rem 0.2rem;
+    border-right: 0.1px solid white;
+}
+
+.lists:hover{
+    color: yellow;
+}
+
+
+
+
+/*.................. Details section here ............... */
+.container{
+    margin-top: 4rem;
+}
+
+.details{
+    width: 100%;
+    display: flex;  
+}
+.details img{
+    width: 50%;
+}
+.detailDiv{
+    width: 50%;
+}
+.detailDiv h2{
+    color: var(--textColor);
+    text-align: center;
+    margin: 0rem 0;
+}
+label{
+    text-align: left;
+    font-size: 1.2rem;
+    width: 12rem;
+    color: var(--textColor);
+}
+input{
+    width: 15rem;
+    border: 2px solid rgb(218, 217, 217);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.subDiv{
+    width: 100%;
+    margin:0 0 1rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+button{
+    background-color: #e6425b;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    margin: 0 0 0 8rem;
+}
+
+.unmatch{
+    color: red;
+    display: none;
+}
+.success p{
+    color: green;
+    font-size: 1.2rem;
+}
+
+.success{
+    display: none;
+}
+
+.footImg{
+    width: 80vw;
+    height: 9rem;
+    margin-left:10rem;
+}
+
+#contactError{
+    width: 15rem;
+    color: red;font-size: 0.5rem;
+    font-weight: 600;
+    display: none;
+}

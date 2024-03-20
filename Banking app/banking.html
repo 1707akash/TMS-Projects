@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+    <link rel="stylesheet" href="./banking.css">
+    <script src="https://kit.fontawesome.com/94a9f00197.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/94a9f00197.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="header">
+        <div class="navbar">
+            <div class="logo-title">
+                <img class="logoImg" src="./logo1.jpg" alt="banklogo">
+                <h2 class="bankTitle">Sarkari Bank</h2>
+            </div>
+    
+            <div class="punchLine">
+                <h2>We Care For Your Money</h2>
+            </div>
+    
+            <div class="linklists">
+                <ul class="navlinks">
+                    <li class="lists">Products</li>
+                    <li class="lists">Digital Banking</li>
+                    <li class="lists">About Us</li>
+                    <li class="lists">Customer Corner</li>
+                    <li class="lists">Others</li>
+                </ul>
+            </div>
+
+            <div class="out">
+                <div style="padding-right: 0.5rem;" id="logout" class="logout exit">
+                    <button><i class="fa-solid fa-power-off"></i></button>
+                    <span>Logout</span>
+                </div>
+
+                <div id="deleteId" class="deleteId exit">
+                    <button><i class="fa-solid fa-trash"></i></button>
+                    <span>Delete Account</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- This is main body  -->
+    <div class="container">
+        <section class="mainBody">
+            <h3>Hello <span class="personName" id="personName"></span></h3>
+            <h2>Welcome to Sarkari Bank</h2>
+            <div class="personInfo">
+                <h4>Account No: <span id="acc"></span></h4>
+                <h4>Email Id: <span id="localMail"></span></h4>
+                <h4>IFSC Code: <span id="ifscCd"></span></h4>
+            </div>
+            <div class="banking">
+                    <span class="balanceTag" id="balanceTag">Balance</span>
+                    <span class="eye" id="eye"><i class="fa-solid fa-eye"></i></span>
+                    <span class="showBalance" id="showBalance">0.00</span>
+            </div>
+        
+            <div class="transaction">
+                <div class="deposit transcField">
+                    <h3>Deposit Form</h3>
+                    <h4>Total Deposit: <span id="totalDep">0.0</span> </h4>
+                    <form action="" id="depositForm"></form>
+                    <div class="infotags">
+                    <label for="depAmt">Amount:</label>
+                    <input type="number" id="depAmt" value="">
+                    </div>
+                    
+                    <div class="infotags">
+                    <label for="depType">Type:</label>
+                    <select name="depType" id="depType">
+                        <option value="Savings">Savings</option>
+                        <option value="Current">Current</option>
+                    </select>
+                    </div>
+                    
+                    <div class="infotags">
+                    <label for="depIfsc">IFSC code:</label>
+                    <input type="text" id="depIfsc" >
+                    </div>
+                    
+                    <div class="infotags">
+                    <label for="depReasn">Reason:</label>
+                    <input type="text" id="depReasn">
+                    </div>
+                    
+                    <button class="tranBtn depBtn" id="depBtn" type="submit">Deposit</button>
+                    
+                </div>
+        
+        
+                <div class="withdrawal transcField" id="withdrawal">
+                    <h3>Withdrawal Form</h3>
+                    <h4>Total Withdrawal: <span id="totalDraw">0.0</span> </h4>
+                    <div class="infotags">
+                        <label for="drawAmt">Amount:</label>
+                        <input type="number" id="drawAmt">
+                        </div>
+                        
+                        <div class="infotags">
+                        <label for="drawType">Type:</label>
+                        <select name="drawType" id="drawType">
+                            <option value="Savings">Savings</option>
+                            <option value="Current">Current</option>
+                        </select>
+                        </div>
+                        
+                        <div class="infotags">
+                        <label for="drawIfsc">IFSC code:</label>
+                        <input type="text" id="drawIfsc">
+                        </div>
+                        
+                        <div class="infotags">
+                        <label for="drawReasn">Reason:</label>
+                        <input type="text" id="drawReasn">
+                        </div>
+                        
+                        <button class="tranBtn" id="drawBtn">Withdraw</button>
+                        <p class="insufficientErr" id="insufficientErr">
+                            Insufficient Balance
+                        </p>
+                </div>
+            </div>
+            </section>
+        
+        
+        
+            <!-- ...............Transaction History...............  -->
+           
+            <div class="tableDiv" id="tableDiv">
+                <h2>Transaction History</h2>
+                <table id="table">
+                    <thead>
+                        <td>S.No.</td>
+                        <td>Date</td>
+                        <td>Reason</td>
+                        <td>Amount</td>
+                        <td>Type</td>
+                        <td>Credit/Debit</td>
+                        <td>Balance</td>
+                    </thead>
+        
+                </table>
+            </div>
+    </div>
+    
+    
+
+
+
+    <script src="./banking.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application form</title>
+    <link rel="stylesheet" href="application.css">
+    <script src="https://kit.fontawesome.com/94a9f00197.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="main">
+        <h1>Application Form</h1>
+        <br>
+        <div class="inner">
+    <!-- .......................Image..................... -->
+    <div class="topImage">
+        <label for="photo" class="uploadImg">Upload Image</label>
+    <br>
+    <img src="./pic1.png" alt="" id="profile">
+    <br>
+    <input type="file" src="./pic1.png" alt="choose pic" id="file" >
+    <br>
+    </div>
+
+    <br><br>
+
+
+    <label for="firstName">First Name</label> <br>
+    <input class="box" type="text" name="firstName" id="firstName" placeholder="eg:-xyz" value="" required>
+    <p id="fnameError"></p>
+    <br>
+    <br>
+
+    <label for="lastName">Last Name</label> <br>
+    <input class="box" type="text" name="lastName" id="lastName" placeholder="eg:-xyz" required>
+    <p id="lnameError"></p>
+    <br>
+    <br>
+
+    <!-- Birthdate -->
+    <label for="birthDate">D.O.B</label> <br>
+    <input class="box" type="date" name="birthDate" id="birthDate" value="" required>
+    <br>
+    <br>
+
+    <!-- Gender -->
+    <label for="gender" required>Gender</label>
+    <br>
+    <label for="male">Male:</label>
+    <input type="radio" name="gender" id="male" value="Male" class="gender">
+    <label for="female">Female:</label>
+    <input type="radio" name="gender" id="female" value="Female" class="gender">
+    <label for="others">Others:</label>
+    <input type="radio" name="gender" id="others" value="Others" class="gender">
+    <br>
+    <br>
+
+    <!-- Mobile number -->
+    <label for="mobNum">Mobile Number</label> <br>
+    <input class="box" type="number" name="mobNum" id="mobNum" placeholder="eg- 9998887777">
+    <p id="numError"></p>
+    <br>
+    <br>
+
+    <!-- Skills -->
+    <label for="skillSet">Acquired skills 
+        <button class="arrowBtn" id="arrowBtn" ><i class="fa-solid fa-caret-right"></i></button> </label>
+    <br>
+    <select class="box skillSelector" name="" id="skillSet" multiple>
+        <!-- <input type="text" placeholder="allSkills"> -->
+        <option class="choices" name="skills[]" id="html" value="html">HTML</option>
+    <option class="choices" name="skills[]" id="css" value="css">CSS</option>
+    <option class="choices" name="skills[]" id="javascript" value="javascript">JavaScript</option>
+    <option class="choices" name="skills[]" id="reactjs" value="reactjs">ReactJS</option>
+    <option class="choices" name="skills[]" id="node" value="nodejs">NodeJS</option>
+    <option class="choices" name="skills[]" id="figma" value="figma">Canva</option>
+    <option class="choices" name="skills[]" id="canva" value="canva" >Figma</option></select>
+    
+    
+    <br>
+    <br>
+
+    <!--................. Higher Education................-->
+    <label for="">Educational Qualification</label>
+    <br>
+        <input type="checkbox" name="education" id="post-graduation" value="Post-graduation" class="edu">
+        <label for="post-graduation">Post-Graduation</label>
+    </label>
+    <br>
+    <label for="graduation">
+        <input type="checkbox" name="education" id="graduation" value="Graduation" class="edu">
+        <label for="graduation">Graduation</label>
+    </label>
+    <br>
+    <label for="diploma">
+        <input type="checkbox" name="education" id="diploma" value="Diploma" class="edu">
+        <label for="post-graduation">Diploma</label>
+    </label>
+    <br>
+    <label for="higher-secondary">
+        <input type="checkbox" name="education" id="higher-secondary" value="Higher-secondary" class="edu">
+        <label for="higher-secondary">Higher-secondary</label>
+    </label>
+    <br>
+    <br>
+
+
+    <!-- ......................Description............... -->
+    <label for="description" >Write about yourself</label>
+    <br>
+    <textarea name="description" id="description" cols="30" rows="10" maxlength="300" class="descArea"></textarea>
+    <br><br>
+
+    
+
+
+    <!-- ......................Submit...................... -->
+    <button type="submit" class="submitBtn" id="submitBtn">Submit</button>
+        </div>
+
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="./application.js"></script>
+</body>
+</html>

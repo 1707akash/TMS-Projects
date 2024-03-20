@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ..................gender............. -->
+    <form action="/submit" method="post">
+        <label for="male">Male:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <br>
+        <label for="female">Female:</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <br>
+        <label for="other">Other:</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+
+
+
+      <!-- .................skills............ -->
+      <details>
+        <summary>Select multiple options</summary>
+        <ul>
+          <li>
+            <input type="checkbox" id="option1" name="options[]" value="Option 1">
+            <label for="option1">Option 1</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option2" name="options[]" value="Option 2">
+            <label for="option2">Option 2</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option3" name="options[]" value="Option 3">
+            <label for="option3">Option 3</label>
+          </li>
+          <!-- Add more options as needed -->
+        </ul>
+      </details>
+
+
+      <input type="checkbox" name="myCheckbox" value="1" onclick="selectOnlyThis('Check1')" id="Check1" /> Option 1
+      <input type="checkbox" name="myCheckbox" value="2" onclick="selectOnlyThis('Check2')" id="Check2" /> Option 2
+      <input type="checkbox" name="myCheckbox" value="3" onclick="selectOnlyThis('Check3')" id="Check3" /> Option 3
+      <input type="checkbox" name="myCheckbox" value="4" onclick="selectOnlyThis('Check4')" id="Check4" /> Option 4
+
+
+
+      <textarea name="about" rows="3" maxlength="10" class="form-control" id="about">hhh</textarea>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id doloremque, deserunt, dolores assumenda consequuntur inventore repellat nobis explicabo minima, fugit quos beatae fuga distinctio! Tenetur eligendi a commodi? Neque perferendis doloribus consequuntur deleniti, inventore incidunt eaque minus itaque totam excepturi, alias dolorum exercitationem nam autem adipisci reiciendis et! Temporibus voluptatem quasi, molestiae architecto cum unde harum in ullam repellat dignissimos ipsam eveniet ducimus consequuntur cupiditate laudantium illo? Vero, sunt ullam nisi accusamus doloribus natus a eos repudiandae maxime molestiae cumque velit asperiores blanditiis voluptatem, culpa reprehenderit saepe illo architecto iste doloremque corporis illum deleniti! Et nam eos ea nulla expedita?
+
+
+
+      <script>
+        function selectOnlyThis(id) {
+          for (var i = 1;i <= 4; i++) {
+          document.getElementById("Check" + i).checked = false;
+         }
+        document.getElementById(id).checked = true;
+}
+      </script>
+</body>
+</html>

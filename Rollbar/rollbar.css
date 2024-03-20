@@ -1,0 +1,486 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}body{
+    font-family: "DM Sans", sans-serif;
+}
+:root{
+    --darkblue : #272f40;
+    --fade-blue : #2a3b64;
+}
+.container{
+    background-color: var(--darkblue);
+    /* padding: 0rem 4rem 3rem 4rem; */
+}
+hr{
+    width: 90%;
+    margin: auto;
+    border: 0;
+    height: 0.1px;
+    background-color: #646363;
+}
+
+
+/* .......................nav section............. */
+
+.header{
+    height: 4rem;
+    padding: 1rem 3rem 0 3rem;
+    background: linear-gradient(90deg, var(--darkblue) ,var(--fade-blue), #272f40, #272f40);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.logAndMenu{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+.rollLogo{
+    height: 3.5rem;
+    width: 13.5rem;
+}
+
+.menuTags{
+    display: flex;
+    list-style: none; 
+    gap: 1.8rem;
+    padding-top: 1.5rem;
+}
+.tagAnchor{
+    text-decoration: none;
+    color: white;
+    font-size: 1.0rem;
+    font-weight: 700; 
+}
+.tagAnchor:hover{
+    padding-bottom: 1rem 0 0.4rem 0;
+    border-bottom: 4px solid #3569f3;
+    width: 4rem;
+}
+.smallLogo{
+    height: 1rem;
+    width: 1rem;
+}
+/* nav Buttons*/
+.btns{
+    padding-top: 1rem;
+}
+.topBtn{
+    height: 2.5rem;
+    width: 9rem;
+    border-radius: 3.5rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: 550; 
+}
+
+
+.login{
+    border: 2px solid white;
+    background-color: transparent;
+}
+.login:hover{
+    background: linear-gradient(45deg,#3569f3,#e6896a);
+    border: none;
+}
+.tryFree{
+    background-color: #54ed9f;
+    color: var(--darkblue);
+}
+
+/* wrappers..... */
+.tags{
+    position: relative;
+}
+
+.productMenu{
+    width: 33rem;
+    height: 13rem;
+    border-radius: 0.3rem;
+    z-index: 20;
+    position: relative;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: 0.3s;
+}
+
+
+.docsMenu{
+    z-index: 20;
+    height: 12rem;
+    width:40rem;
+    border-radius: 0.3rem;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.solutionMenu{
+    z-index: 20;
+    width: 32rem;
+    height: 15rem;
+    border-radius: 0.3rem;
+    top: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    transition: 1s ease-in;
+}
+.wrapperInner{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0 1.5rem 0;
+}
+.wrapperInner ul{
+    line-height: 1.5rem;
+}
+.wrapperInner ul li{
+    list-style: none;
+    line-height: 1.5rem;
+}
+.wrapper{
+    color: black;
+    background-color: whitesmoke;
+    position: absolute;
+    display: none;
+}
+.product:hover .productMenu{
+    display: block;
+}
+.docs:hover .docsMenu{
+    display: block;
+}
+.solutions:hover .solutionMenu{
+    display: block;
+}
+.boxHead{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.boxList{
+    margin-left: 1.25rem;
+}
+.hamburger{
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+
+
+/* ...................hero section.................. */
+.heroSection{
+    /* height: 70vh; */
+    background: linear-gradient(90deg, var(--darkblue),var(--fade-blue), #272f40, #272f40);
+    box-shadow: -1rem -8rem 8rem 4rem var(--darkblue) inset;
+    /* horizontal vertical blur spread  */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.heroSection h1{
+    font-family: Poppins,sans-serif;
+    font-size: 5.5rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 96.5px;
+    text-align: center;
+    padding: 4% 16% 2rem 16%;
+    line-height: 6rem;
+    
+}
+
+
+
+.heroSection button{
+    width: 13rem;
+    height: 3.25rem;
+    color: white;
+    background-color: #3569f3;
+    border-radius: 4rem;
+    font-size: 1.25rem;
+    font-weight: 700;  
+}
+.heroSection button:hover{
+    background-color: blue;
+}
+.headSpan{
+    background: linear-gradient(62deg,#e1e42f 9.66%,#ff8e5b 61.49%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heroSection button{
+    margin: auto;
+}
+
+
+
+
+
+
+/* ....................section ......................*/
+.section{
+    background-color: var(--darkblue);
+    color: white;
+    padding: 5rem 0 0 0;
+}
+.errorFix{
+    text-align: center;
+    color: #fff;
+    font-size: 3.25rem;
+    margin-bottom: 3.75rem;
+    padding-top: 1rem;
+    font-weight: 800;
+    margin-bottom: 12rem;
+}
+
+.sectionDivs{
+    width: 85%;
+    display: flex;
+    margin: 13rem auto 13rem auto;
+    justify-content: space-between;
+}
+.details{
+    width:50%;
+    padding-right: 8rem;
+}
+.left{
+    padding: 0 8rem 0 0;
+}
+.right{
+    padding: 0 0 0 8rem;
+}
+.subHeading{
+    margin-top: 3rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+.summ{
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+.lowerHead{
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+}
+.fa-arrow-right{
+    width: 3rem;
+    animation: arrow-animation 1s infinite linear;
+}
+.fa-arrow-right:hover{
+    transform: translateX(2rem);
+    transition: 0.3s;
+    color: gold;
+    animation-duration: 0.5s;
+}
+.last{
+    margin-bottom: 6rem;
+}
+.image{
+    width: 50%;
+}
+.image img{
+    width: 92%;
+}
+
+
+/* .....................Footer............. */
+
+footer{
+    color :white;
+}
+.topFooter{
+    display: flex;
+    justify-content: space-around;
+    padding: 3.5rem 1rem 3.5rem 1rem;
+}
+.langList{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.rollLogo2{
+    height: 3.25rem;
+    width: 13rem;
+}
+.footTitle{
+    font-size: 1rem;
+    font-weight: 550;
+    padding-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    line-height: 2.3rem
+}
+.footUls{
+    line-height: 2.5rem;
+}
+.footList{
+    font-size: 0.85rem;
+    list-style: none;
+    line-height: 2.3rem;
+}
+.footList:hover{
+    color: gold;
+    transition: 0.2s;
+}
+.fa-brands{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.bottomFooter{
+    padding-bottom: 3.5rem;
+}
+.bottomFooter ul{
+    display: flex;
+    margin-top: 1.2rem;
+    margin-left: 5rem;
+}
+.bottomFooter ul li{
+    font-size: 0.8rem;
+    margin-right: 2rem;
+    list-style: none;
+}
+@media only screen and (max-width:900px){
+    .topFooter{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 3rem;
+    }
+    .lastLogoDiv{
+        width: 100%;
+    }
+    .footColumns{
+        width: 50%;
+        align-self: flex-start;
+    }
+    /* .footTitle{
+        margin-left: 30%;
+    }
+    .one{
+        padding-left: 2rem;
+    } */
+    .footUls{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footList{
+        align-self: flex-start;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1170px){
+    .hamburger{
+        display: block;
+        margin-top: 0.8rem;
+    }
+    .menuTags{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1170px){
+    .header{
+        height: 2.8rem;
+    }
+    .topBtn{
+        height: 1.8rem;
+        width: 7rem;
+    }
+    .rollLogo{
+        height: 2.8rem;
+        width: 10.5rem;
+    }
+    .btns{
+        padding: none;
+    }
+    .heroSection h1{
+        font-size: 4.75rem;
+    }
+    .errorFix{
+        font-size: 2.9rem;
+        margin-bottom: 6rem;
+    }
+}
+
+@media only screen and (max-width:1350px) {
+    .details{
+        width: 50%;
+    }
+    .subHeading{
+        margin-top: 2rem;
+        font-size: 1.9rem;
+    }
+    .summ{
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+    }
+    .lowerHead{
+        font-size: 1.2rem;
+        margin-top: 2.1rem;
+    }
+}
+
+@media only screen and (min-width:900px) and (max-width:1100px) {
+    .sectionDivs{
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem auto;
+        gap: 3rem;
+    }
+    .details{
+        width: 70%;
+        /* margin: auto;
+        padding: auto; */
+    }
+    .left{
+        padding: 0;
+    }
+    .right{
+        padding: 0;
+    }
+    .image{
+        width: 70%;
+    }
+    .image img{
+        width: 100%;
+    }
+    .subHeading{
+        margin-top: 2rem;
+        font-size: 1.9rem;
+    }
+    .summ{
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        margin: auto;
+        padding: auto;
+    }
+    .lowerHead{
+        font-size: 1.2rem;
+        margin-top: 2.1rem;
+    }
+}

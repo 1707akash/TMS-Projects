@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signUp.css" />
+    
+  </head>
+  <body>
+    <div class="header">
+      <div class="navbar">
+        <div class="logo-title">
+            <img class="logoImg" src="./logo1.jpg" alt="banklogo">
+            <h2 class="bankTitle">Sarkari Bank</h2>
+        </div>
+
+        <div class="punchLine">
+            <h2>We Care For Your Money</h2>
+        </div>
+
+        <div class="linklists">
+            <ul class="navlinks">
+                <li class="lists">Products</li>
+                <li class="lists">Digital Banking</li>
+                <li class="lists">About Us</li>
+                <li class="lists">Customer Corner</li>
+                <li class="lists">Others</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    
+    <div class="container">
+      <div class="details">
+        <img src="./bg4.avif" alt="image">
+  
+        <div class="detailDiv">
+          <h2>Sign Up Here</h2>
+            <div class="nameDiv subDiv">
+              <label for="user">Name: </label>
+              <input type="text" id="user" placeholder="xyz" />
+            </div>
+        
+            <div class="mail subDiv">
+              <label for="mailid">Email:</label>
+              <input type="email" id="mailid" placeholder="abc@yahoo.com" />
+            </div>
+  
+            <div class="accountNum subDiv">
+              <label for="accountNo">Account No.:</label>
+              <input type="accountNo" id="accountNo" placeholder="10203040501" />
+            </div>
+  
+            <div class="ifscCode subDiv">
+              <label for="ifscCode">Account No.:</label>
+              <input type="ifscCode" id="ifscCode" placeholder="SBIN0000111" />
+            </div>
+        
+            <div class="mobile subDiv">
+              <label for="mobnum">Mobile Number:</label>
+              <input type="number" id="mobnum" placeholder="9998887777" />
+              <span id="contactError">Please enter a valid number</span>
+            </div>
+        
+            <div class="pw subDiv">
+              <label for="createpw">Create Password:</label>
+              <input type="password" id="createpw"  />
+            </div>
+        
+            <div class="confirm subDiv">
+              <label for="confirm">Confirm Password:</label>
+              <input type="password" id="confirm" />
+            </div>
+            <p class="unmatch" id="unmatch">*Passwords don't match</p>
+            <button type="submit" id="submit">Sign Up</button>
+            <div class="success" id="success">
+              <p>Successfully Registered</p>
+            </div>
+      </div>
+      </div>
+    </div>
+    
+
+    <img class="footImg" src="./fimg1.PNG" alt="">
+
+
+    <script src="./signup.js"></script>
+  </body>
+</html>

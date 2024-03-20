@@ -1,0 +1,178 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --deepBlue : #00569b;
+    --magenta:#f0aae2;
+    --textColor: #fff;
+    --buttonClr: #f00252;
+}
+
+body{
+    background-image: url(./bg2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.navbar{
+    background-color: rgba(0, 0, 0,0.3);
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.logo-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+}
+.punchLine{
+    margin-left: 8rem;
+}
+
+.logoImg{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.navlinks{
+    display: flex;
+}
+
+.lists{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0 0.3rem;
+    margin: 0.5rem 0.2rem;
+    color: #e2dfdf;
+    border-right: 0.1px solid white;
+}
+.lists:hover{
+    color: white;
+}
+h1{
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* ...................Login part begins here .............. */
+.loginMain{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    /* text-align: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    color: var(--textColor);
+}
+
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    align-items: center;
+    gap: 1rem;
+}
+.login label{
+    font-size: 1.6rem;
+    font-weight: 650;
+}
+.login h4{
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+}
+
+.login input{
+    height: 3.5rem;
+    width: 30rem;
+    border-radius: 3.5rem;
+    background-color: rgba(0, 0, 0,0.1);
+    border: 2.5px solid #f9f9f9;
+    color: white;
+    transition: 0.2s;
+}
+.login input:hover{
+    background-color:  rgba(0, 0, 0,0);
+    transform: scale(1.05);
+}
+
+.login button{
+    background-color: transparent;
+    height: 3.5rem;
+    width: 30rem;
+    border-radius: 3.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin-top: 1rem;
+    border: 2.5px solid #f9f9f9;
+    transition: 0.2s;   
+}
+.login button:hover{
+    transform: scale(1.05);
+    background-color: white;
+    color: black;
+}
+
+#email{
+    padding: 1rem;
+}
+#password{
+    padding: 1rem;
+}
+#pwError{
+    color: red;
+    display: none;
+}
+
+
+
+
+/* ...................Bottom Div here .................... */
+
+
+.bottomDiv{
+    margin: 3rem 0 0 20%;
+    
+}
+.bottomDiv h3{
+    font-size: 2rem;
+    text-decoration:underline;
+    font-weight: 650;
+    color: white;
+}
+
+.bottomDiv a{
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+.bottomDiv button{
+    background-color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    transition: 0.2s;
+}
+.bottomDiv button:hover{
+    background-color: black; 
+}
+.bottomDiv a:hover{
+    color: white;
+}
